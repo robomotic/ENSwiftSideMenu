@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xKr-44-F3h">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--SwiftSideMenu-->
@@ -93,14 +94,29 @@ Menu disabled</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Kw-fA-Kct">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="keo-1x-0ug"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="vmo-1u-jOC" eventType="touchUpInside" id="4d5-37-HaM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1751304179" green="0.90336618430000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="Qkq-oV-QWk" secondAttribute="centerY" id="30h-3g-cdm"/>
+                            <constraint firstItem="4Kw-fA-Kct" firstAttribute="top" secondItem="aZ1-a1-BcP" secondAttribute="bottom" id="5Yk-Vp-4ET"/>
+                            <constraint firstItem="4Kw-fA-Kct" firstAttribute="leading" secondItem="EsI-cR-9So" secondAttribute="leadingMargin" id="8Mc-yN-T8d"/>
                             <constraint firstAttribute="centerX" secondItem="Qkq-oV-QWk" secondAttribute="centerX" id="r58-JR-v5Z"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="4Kw-fA-Kct" id="6Mw-13-LXC"/>
                         <segue destination="Fq9-It-gP6" kind="unwind" identifier="idUnwind" unwindAction="returnFromSegueActions:" id="Ott-13-ZmJ"/>
                     </connections>
                 </viewController>

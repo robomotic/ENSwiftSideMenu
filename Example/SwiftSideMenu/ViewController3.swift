@@ -11,16 +11,21 @@ import UIKit
 
 class ViewController3: UIViewController, ENSideMenuDelegate {
     
+    @IBOutlet weak var backButton: UIButton?
+    @IBOutlet weak var instruction: UILabel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Move next line to viewWillAppear functon if you store your view controllers
         self.sideMenuController()?.sideMenu?.delegate = self
         // Do any additional setup after loading the view.
         
+        /*
         var swipeGestureRecognizer1: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showViewController")
         swipeGestureRecognizer1.direction = UISwipeGestureRecognizerDirection.Right
         
         self.view.addGestureRecognizer(swipeGestureRecognizer1)
+        */
         
     }
     func showViewController() {
@@ -40,6 +45,11 @@ class ViewController3: UIViewController, ENSideMenuDelegate {
     
     func sideMenuWillClose() {
         println("sideMenuWillClose")
+    }
+    
+    @IBAction func back(sender: UIButton) {
+        self.performSegueWithIdentifier("idUnwind", sender: self)
+
     }
     
     func sideMenuShouldOpenSideMenu() -> Bool {
