@@ -24,8 +24,11 @@ class RightSegue: UIStoryboardSegue{
         secondVCView.frame = CGRectMake(0.0, screenHeight, screenWidth, screenHeight)
         
         // Access the app's key window and insert the destination view above the current (source) one.
-        let window = UIApplication.sharedApplication().keyWindow
-        window?.insertSubview(secondVCView, aboveSubview: firstVCView)
+        //let window = UIApplication.sharedApplication().keyWindow
+        //window?.insertSubview(secondVCView, aboveSubview: firstVCView)
+        
+        let navigat = UINavigationController()
+        navigat.pushViewController(self.destinationViewController as! UIViewController, animated: true)
         
         // Animate the transition.
         UIView.animateWithDuration(0.4, animations: { () -> Void in
