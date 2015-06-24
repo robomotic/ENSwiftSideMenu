@@ -29,7 +29,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SwiftSideMenu" id="xVG-Tf-vpo">
-                        <barButtonItem key="leftBarButtonItem" title="Toggle" id="sai-mr-tUc">
+                        <barButtonItem key="leftBarButtonItem" image="menu_icon.png" id="sai-mr-tUc">
                             <connections>
                                 <action selector="toggleSideMenu:" destination="BYZ-38-t0r" id="Izn-G1-zF1"/>
                             </connections>
@@ -201,5 +201,6 @@ Menu disabled</string>
     </scenes>
     <resources>
         <image name="image.png" width="1174" height="1220"/>
+        <image name="menu_icon.png" width="40" height="40"/>
     </resources>
 </document>
