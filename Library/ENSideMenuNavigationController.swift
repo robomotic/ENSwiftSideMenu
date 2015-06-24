@@ -47,8 +47,12 @@ public class ENSideMenuNavigationController: UINavigationController, ENSideMenuP
             self.viewControllers = [contentViewController]
             break
         default:
-            contentViewController.navigationItem.hidesBackButton = true
-            self.setViewControllers([contentViewController], animated: true)
+            //contentViewController.navigationItem.hidesBackButton = true
+            //self.setViewControllers([contentViewController], animated: true)
+            let menuIcon = UIImage(named: "menu_icon")
+            let menuButton = UIBarButtonItem(image: menuIcon, style: .Plain, target: self, action: "toggleMenu")
+            contentViewController.navigationItem.leftBarButtonItem = menuButton
+            self.pushViewController(contentViewController, animated: true)
             break
         }
         

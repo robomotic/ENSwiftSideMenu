@@ -22,6 +22,10 @@ class ViewController2: UIViewController, ENSideMenuDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func toggleSideMenu(sender: AnyObject) {
+        toggleSideMenuView()
+    }
+    
     // MARK: - ENSideMenu Delegate
     func sideMenuWillOpen() {
         println("sideMenuWillOpen")
@@ -33,7 +37,7 @@ class ViewController2: UIViewController, ENSideMenuDelegate {
     
     func sideMenuShouldOpenSideMenu() -> Bool {
         println("sideMenuShouldOpenSideMenu")
-        return false
+        return true
     }
 
     /*

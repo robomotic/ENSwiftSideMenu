@@ -17,6 +17,7 @@
 		5C13259C198E2A9A00CA49BE /* SwiftSideMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C13259B198E2A9A00CA49BE /* SwiftSideMenuTests.swift */; };
 		5C1325AA198E2AB300CA49BE /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C1325A7198E2AB300CA49BE /* image.png */; };
 		5C6D6A271A7E26380047FE0D /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6D6A261A7E26380047FE0D /* ViewController2.swift */; };
+		89299BBA1B36863600E7217F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89299BB91B36863600E7217F /* NavigationController.swift */; };
 		894D58841B2DE9880076011C /* RightSeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894D58831B2DE9880076011C /* RightSeque.swift */; };
 		894D58861B2DEAB70076011C /* LeftSeque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894D58851B2DEAB70076011C /* LeftSeque.swift */; };
 		894D58881B2DEF020076011C /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894D58871B2DEF020076011C /* ViewController3.swift */; };
@@ -49,6 +50,7 @@
 		5C13259B198E2A9A00CA49BE /* SwiftSideMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSideMenuTests.swift; sourceTree = "<group>"; };
 		5C1325A7198E2AB300CA49BE /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		5C6D6A261A7E26380047FE0D /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		89299BB91B36863600E7217F /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		894D58831B2DE9880076011C /* RightSeque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightSeque.swift; sourceTree = "<group>"; };
 		894D58851B2DEAB70076011C /* LeftSeque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSeque.swift; sourceTree = "<group>"; };
 		894D58871B2DEF020076011C /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				894D58831B2DE9880076011C /* RightSeque.swift */,
 				894D58851B2DEAB70076011C /* LeftSeque.swift */,
 				894D58871B2DEF020076011C /* ViewController3.swift */,
+				89299BB91B36863600E7217F /* NavigationController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89299BBA1B36863600E7217F /* NavigationController.swift in Sources */,
 				894D58881B2DEF020076011C /* ViewController3.swift in Sources */,
 				14EAB63E19DD4E95006A90FC /* ENSideMenuNavigationController.swift in Sources */,
 				5C13258B198E2A9A00CA49BE /* ViewController.swift in Sources */,

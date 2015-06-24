@@ -17,6 +17,7 @@ class ViewController: UIViewController, ENSideMenuDelegate {
         
         var swipeGestureRecognizer: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "showController3")
         swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Left
+        self.navigationController?.presentTransparentNavigationBar()
         self.view.addGestureRecognizer(swipeGestureRecognizer)
         
     }
